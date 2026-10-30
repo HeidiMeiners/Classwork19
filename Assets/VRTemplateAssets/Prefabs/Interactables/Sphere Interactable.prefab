@@ -315,6 +315,7 @@ GameObject:
   - component: {fileID: 6137727379644267523}
   - component: {fileID: 5922422646180309903}
   - component: {fileID: 3411371759757287908}
+  - component: {fileID: 4922057617388553298}
   m_Layer: 0
   m_Name: Sphere Interactable
   m_TagString: Untagged
@@ -520,6 +521,20 @@ MonoBehaviour:
   m_MinimumScaleRatio: 0.25
   m_MaximumScaleRatio: 2
   m_ScaleMultiplier: 0.25
+--- !u!114 &4922057617388553298
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4677460305500781396}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1a254ead62c911a449c7aade71f7c6c3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::FreezeOnA
+  rightA: {fileID: 0}
+  leftX: {fileID: 0}
 --- !u!1 &4735031629915870013
 GameObject:
   m_ObjectHideFlags: 0
