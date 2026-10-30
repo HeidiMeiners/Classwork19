@@ -201,7 +201,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 48105802}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 891068341}
+        m_TargetAssemblyTypeName: InstanciarPrefab, Assembly-CSharp
+        m_MethodName: ColorVerde
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &48105802
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -322,7 +334,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 68919574}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 891068341}
+        m_TargetAssemblyTypeName: InstanciarPrefab, Assembly-CSharp
+        m_MethodName: TamanoChico
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &68919574
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -709,7 +733,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 300277254}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 891068341}
+        m_TargetAssemblyTypeName: InstanciarPrefab, Assembly-CSharp
+        m_MethodName: ResetFigura
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &300277254
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1170,7 +1206,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 447648465}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 891068341}
+        m_TargetAssemblyTypeName: InstanciarPrefab, Assembly-CSharp
+        m_MethodName: ColorRojo
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &447648465
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1266,7 +1314,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Button
+  m_text: Reset
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1403,7 +1451,7 @@ GameObject:
   - component: {fileID: 891068342}
   - component: {fileID: 891068341}
   m_Layer: 0
-  m_Name: prefabCube
+  m_Name: prefab
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1421,7 +1469,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9737ac6c17b3a914c8a2a0d6225d0a42, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::InstanciarPrefab
-  prefab: {fileID: 6640387835271095783, guid: 72138a47ec7b8714c91aa39dcdf3b714, type: 3}
+  prefab1: {fileID: 6640387835271095783, guid: 72138a47ec7b8714c91aa39dcdf3b714, type: 3}
+  prefab2: {fileID: 6512716314604831236, guid: 2c1a76173c7e0144fbab968bd1968de1, type: 3}
+  prefab3: {fileID: 4677460305500781396, guid: 753505d367f39d04c8ef944e9491a149, type: 3}
   puntoInstanciacion: {fileID: 891068342}
 --- !u!4 &891068342
 Transform:
@@ -1449,7 +1499,7 @@ GameObject:
   - component: {fileID: 970336241}
   - component: {fileID: 970336240}
   - component: {fileID: 970336239}
-  - component: {fileID: 970336238}
+  - component: {fileID: 970336242}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -1457,23 +1507,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &970336238
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 970336237}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dc42784cf147c0c48a680349fa168899, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.GraphicRaycaster
-  m_IgnoreReversedGraphics: 1
-  m_BlockingObjects: 0
-  m_BlockingMask:
-    serializedVersion: 2
-    m_Bits: 4294967295
 --- !u!114 &970336239
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1550,6 +1583,25 @@ RectTransform:
   m_AnchoredPosition: {x: 0.054, y: 1}
   m_SizeDelta: {x: 1000, y: 600}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &970336242
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 970336237}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7951c64acb0fa62458bf30a60089fe2d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.XR.Interaction.Toolkit::UnityEngine.XR.Interaction.Toolkit.UI.TrackedDeviceGraphicRaycaster
+  m_IgnoreReversedGraphics: 1
+  m_CheckFor2DOcclusion: 0
+  m_CheckFor3DOcclusion: 0
+  m_BlockingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_RaycastTriggerInteraction: 1
 --- !u!1 &992670599
 GameObject:
   m_ObjectHideFlags: 0
@@ -1632,7 +1684,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 992670602}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 891068341}
+        m_TargetAssemblyTypeName: InstanciarPrefab, Assembly-CSharp
+        m_MethodName: ColorAzul
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &992670602
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1753,7 +1817,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 998553812}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 891068341}
+        m_TargetAssemblyTypeName: InstanciarPrefab, Assembly-CSharp
+        m_MethodName: TamanoGrande
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &998553812
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1877,7 +1953,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 891068341}
         m_TargetAssemblyTypeName: InstanciarPrefab, Assembly-CSharp
-        m_MethodName: Instanciar
+        m_MethodName: InstanciarFigura1
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2286,9 +2362,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1149342685}
+      - m_Target: {fileID: 891068341}
         m_TargetAssemblyTypeName: InstanciarPrefab, Assembly-CSharp
-        m_MethodName: Instanciar
+        m_MethodName: InstanciarFigura3
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2336,52 +2412,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1139548342}
   m_CullTransparentMesh: 1
---- !u!1 &1149342684
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1149342686}
-  - component: {fileID: 1149342685}
-  m_Layer: 0
-  m_Name: prefabSphere
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1149342685
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1149342684}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9737ac6c17b3a914c8a2a0d6225d0a42, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::InstanciarPrefab
-  prefab: {fileID: 4677460305500781396, guid: 753505d367f39d04c8ef944e9491a149, type: 3}
-  puntoInstanciacion: {fileID: 1149342686}
---- !u!4 &1149342686
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1149342684}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.054, y: 1.15, z: 1.441}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1249617917
 GameObject:
   m_ObjectHideFlags: 0
@@ -2579,52 +2609,6 @@ MonoBehaviour:
   m_Teleporting:
     m_PersistentCalls:
       m_Calls: []
---- !u!1 &1313835168
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1313835170}
-  - component: {fileID: 1313835169}
-  m_Layer: 0
-  m_Name: prefabCylinder
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1313835169
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1313835168}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9737ac6c17b3a914c8a2a0d6225d0a42, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::InstanciarPrefab
-  prefab: {fileID: 6512716314604831236, guid: 2c1a76173c7e0144fbab968bd1968de1, type: 3}
-  puntoInstanciacion: {fileID: 1313835170}
---- !u!4 &1313835170
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1313835168}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.054, y: 1.15, z: 1.441}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1324421149
 GameObject:
   m_ObjectHideFlags: 0
@@ -2986,9 +2970,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1313835169}
+      - m_Target: {fileID: 891068341}
         m_TargetAssemblyTypeName: InstanciarPrefab, Assembly-CSharp
-        m_MethodName: Instanciar
+        m_MethodName: InstanciarFigura2
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -3485,7 +3469,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2095499483}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 891068341}
+        m_TargetAssemblyTypeName: InstanciarPrefab, Assembly-CSharp
+        m_MethodName: TamanoMediano
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &2095499483
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3535,5 +3531,3 @@ SceneRoots:
   - {fileID: 1249617921}
   - {fileID: 970336241}
   - {fileID: 891068342}
-  - {fileID: 1149342686}
-  - {fileID: 1313835170}

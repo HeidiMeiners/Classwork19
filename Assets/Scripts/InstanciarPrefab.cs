@@ -104,17 +104,17 @@ public class InstanciarPrefab : MonoBehaviour
 
     public void TamanoChico()
     {
-        CambiarTamano(0.5f);
+        CambiarTamano(5f);
     }
 
     public void TamanoMediano()
     {
-        CambiarTamano(1f);
+        CambiarTamano(10f);
     }
 
     public void TamanoGrande()
     {
-        CambiarTamano(1.5f);
+        CambiarTamano(15f);
     }
 
     private void CambiarTamano(float escala)
